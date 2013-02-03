@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Coloring</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.apollobuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.apollonature</nature>
+		<nature>com.adobe.flexbuilder.project.flexnature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] FlashProLib-src</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/FlashProLib/src</locationURI>
+		</link>
+		<link>
+			<name>[source path] as3corelib-src</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/AS3Library/lib/as3corelib/src</locationURI>
+		</link>
+		<link>
+			<name>[source path] as3viewnavigator</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/AS3Library/lib/as3viewnavigator</locationURI>
+		</link>
+		<link>
+			<name>[source path] graffiti_library</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/AS3Library/lib/graffiti_library</locationURI>
+		</link>
+		<link>
+			<name>[source path] playbook_substitutes</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/FlashProLib/playbook_substitutes</locationURI>
+		</link>
+		<link>
+			<name>[source path] tweener</name>
+			<type>2</type>
+			<locationURI>WORKSPACE/AS3Library/lib/tweener</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

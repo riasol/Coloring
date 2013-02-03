@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<actionScriptProperties analytics="false" mainApplicationPath="Coloring.as" projectUUID="997fb4d1-bcdb-469c-b748-e6991d178b2e" version="6">
+  <compiler additionalCompilerArguments="-locale en_US  -define+=CONFIG::debug,true" autoRSLOrdering="true" copyDependentFiles="false" flexSDK="BlackBerry Tablet OS SDK 0.9.4 for Adobe AIR" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+    <compilerSourcePath>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/AS3Library/lib/tweener"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/AS3Library/lib/as3corelib/src"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/AS3Library/lib/graffiti_library"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/AS3Library/lib/as3viewnavigator"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/FlashProLib/playbook_substitutes"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="${WORKSPACE}/FlashProLib/src"/>
+    </compilerSourcePath>
+    <libraryPath defaultLinkType="0">
+      <libraryPathEntry kind="4" path="">
+        <modifiedEntries>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/air/qnx-air.swc" useDefaultLinkType="false"/>
+        </modifiedEntries>
+      </libraryPathEntry>
+    </libraryPath>
+    <sourceAttachmentPath/>
+  </compiler>
+  <applications>
+    <application path="Coloring.as">
+      <airExcludes/>
+    </application>
+  </applications>
+  <modules/>
+  <buildCSSFiles/>
+</actionScriptProperties>

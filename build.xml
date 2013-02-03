@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Coloring" default="dist">
+	<property file="../variables.properties" />
+	<property file="project.properties" />
+	<import file="../FlashProLib/src/build.xml" />
+	<target name="dist" depends="clean">
+		<aircompile sdk="${bbpb.sdk}"
+		            srcdir="${workspace}/${ant.project.name}/src"
+		            module="Coloring"
+		            cmdline="-source-path+='${workspace}/AS3Library/lib/tweener'
+						-source-path+='${workspace}/AS3Library/lib/as3corelib/src'
+						-source-path+='${workspace}/AS3Library/lib/graffiti_library'
+						-source-path+='${workspace}/AS3Library/lib/as3viewnavigator'
+						-source-path+='${workspace}/FlashProLib/src'
+			-define+=CONFIG::debug,false
+						"
+		            destdir="${workspace}/${ant.project.name}/build" />
+		<mkdir dir="build" />
+		<mkdir dir="dist" />
+		<copy todir="build">
+			<fileset dir="src">
+				<include name="appIcon.png" />
+				<include name="Coloring-app.xml" />
+			</fileset>
+		</copy>
+		<compilebb sdk="${bbpb.sdk}"
+		           directory="${workspace}/${ant.project.name}/build"
+		           output="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar"
+		           descriptor="${workspace}/${ant.project.name}/build/Coloring-app.xml"
+		           swf="${workspace}/${ant.project.name}/build/Coloring.swf"
+		           files="${workspace}/${ant.project.name}/build/appIcon.png"
+		           publisher="${publisher}" />
+		<signbb sdk="${bbpb.sdk}"
+		        cskpass="${cskpass}"
+		        storepass="${storepass}"
+		        bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar" />
+	</target>
+	<target name="clean">
+		<delete dir="build">
+		</delete>
+		<delete dir="dist">
+		</delete>
+	</target>
+	<target name="launch">
+		<!--<uninstallbbapp sdk="${bbpb.sdk}" bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar" ip="192.168.2.128" password="${password}"/>-->
+		<launchbb sdk="${bbpb.sdk}" bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar" ip="192.168.2.128" password="${password}"/>
+	</target>
+</project>
